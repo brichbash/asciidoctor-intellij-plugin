@@ -69,7 +69,7 @@ jobs:
           # a comma when called from the Qodana action.
           args: >
             --linter,jetbrains/qodana-jvm-community:2022.3-eap,
-            --property=idea.suppressed.plugins.id=com.intellij.gradle
+            --property,idea.suppressed.plugins.id=com.intellij.gradle
             -v,${{ github.workspace }}/grazie:/opt/idea/plugins/grazie,
             -v,${{ github.workspace }}/grazie-pro:/opt/idea/plugins/grazie-pro,
             -v,${{ github.workspace }}/asciidoctor-intellij-plugin:/opt/idea/plugins/asciidoctor-intellij-plugin,
