@@ -68,7 +68,7 @@ jobs:
           # TODO: the plugin `org.jetbrains.plugins.gradle` should also be suppressed, but the parameter doesn't allow
           # a comma when called from the Qodana action.
           args: >
-            --linter,jetbrains/qodana-jvm-community:2022.2,
+            --linter,jetbrains/qodana-jvm-community:2022.3-eap,
             --property=idea.suppressed.plugins.id=com.intellij.gradle
             -v,${{ github.workspace }}/grazie:/opt/idea/plugins/grazie,
             -v,${{ github.workspace }}/grazie-pro:/opt/idea/plugins/grazie-pro,
